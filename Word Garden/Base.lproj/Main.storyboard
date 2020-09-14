@@ -71,8 +71,10 @@
                                     <constraint firstAttribute="width" constant="30" id="i4p-UX-alj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
+                                    <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="s2f-cm-9Ot"/>
+                                    <action selector="guessedLetterFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="bO4-uO-zgn"/>
                                     <action selector="guessedLetterTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="a8d-dz-sIB"/>
                                 </connections>
                             </textField>
